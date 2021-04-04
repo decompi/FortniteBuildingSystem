@@ -44,8 +44,8 @@ function BuildManagerComponent.SwitchBuild(ActionName, InputState, InputObject)
 					BuildManagerComponent.SelectedBuild = "Floor"
 				elseif InputObject.KeyCode == Enum.KeyCode.V then
 					BuildManagerComponent.SelectedBuild = "Ramp"
-				elseif InputObject.KeyCode == Enum.KeyCode.F then
-					BuildManagerComponent.SelectedBuild = "Cone"
+				--elseif InputObject.KeyCode == Enum.KeyCode.F then
+					--BuildManagerComponent.SelectedBuild = "Cone"
 				end
 			end
 		end
