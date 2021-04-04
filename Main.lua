@@ -4,7 +4,7 @@ local ContextActionService = game:GetService("ContextActionService")
 local RunService = game:GetService("RunService")
 --|| MODULES ||--
 local BuildManagerComponentModule = require(script:WaitForChild("BuildManagerComponent"))
-ContextActionService:BindAction("SwitchBuild", BuildManagerComponentModule.SwitchBuild, true, Enum.KeyCode.C, Enum.KeyCode.Q, Enum.KeyCode.V, Enum.KeyCode.F)
+ContextActionService:BindAction("SwitchBuild", BuildManagerComponentModule.SwitchBuild, true, Enum.KeyCode.C, Enum.KeyCode.Q, Enum.KeyCode.V)
 ContextActionService:BindAction("ToggleBuildMode", BuildManagerComponentModule.ToggleBuildMode, true, Enum.KeyCode.H)
 RunService.RenderStepped:Connect(function()
 	if BuildManagerComponentModule.isBuilding then
